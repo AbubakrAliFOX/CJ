@@ -1,0 +1,194 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: Cornsilk;
+	font-size: 16px; 
+	font-family: 'Jaldi', sans-serif;
+}
+	
+
+#header-content {
+	text-align: center;
+	margin: 80px;
+	font-family: 'Coda', cursive;
+
+}
+
+.container {
+	background-color: Oldlace;
+}
+
+.button {
+	background: Gold;
+	width: 125px;
+	text-align: center;
+	margin-top:5px;
+	font-size: 1em;
+}
+
+.row {
+	color: black;
+
+}
+
+.row a {
+	color: black;
+}
+.row a:hover, .row a:focus {
+	text-decoration: none;
+	
+}
+
+
+.not-active {
+	opacity: .66;
+}
+
+.not-active a:hover {
+	text-shadow: 1px 1px;
+}
+
+
+.quote {
+	text-align: center;
+	margin: 60px 30px 100px 30px;
+}
+
+.quote p {
+	text-align: right;
+	margin-right: 40px;
+}
+
+/* All picture rows*/
+.caption {
+	text-align: left;
+	width: 100%;
+
+
+}
+
+.details {
+	text-align: left;
+	width: 100%;
+	float: right;
+}
+
+/* All picture rows ends*/
+
+
+.figure img {
+	width: 100%;
+
+}
+
+.figure-1, .figure-2, .figure-3, .figure-4 {
+	margin-bottom: 150px;
+}
+
+.figure-1 {
+	margin-top: 50px;
+}
+
+/* 1st Pic*/
+.caption-1 {
+	text-align: left;
+	width: 100%;
+
+
+}
+
+.details-1 {
+	text-align: left;
+	width: 100%;
+	float: right;
+}
+
+
+/* 2nd Pic*/
+.caption-2 {
+	text-align: left;
+	width: 100%;
+
+
+}
+
+.details-2 {
+	text-align: left;
+	width: 100%;
+	float: right;
+}
+
+
+/* 3rd Pic*/
+.caption-3 {
+	text-align: left;
+	width: 100%;
+
+
+}
+
+.details-3 {
+	text-align: left;
+	width: 100%;
+	float: right;
+}
+
+/* 4th Pic*/
+.caption-4 {
+	text-align: left;
+	width: 100%;
+
+
+}
+
+.details-4 {
+	text-align: left;
+	width: 100%;
+	float: right;
+}
+
+.CJ-Art {
+	text-align: center;
+	width: 100%;
+}
+
+.main-content h3 {
+	font-size: 1.8em;
+}
+
+.main-content p {
+	font-size: 1.3em;
+}
+
+.main-content h2 {
+	margin: 30px;
+	text-align: center;
+}
+
+.social-media {
+	text-align: center;
+}
+
+.social-media img {
+	text-align: center;
+	width: 70px;
+	margin: 50px;
+}
+
+
+.cell {
+	margin: 4px;
+}
+
+footer {
+	text-transform: uppercase;
+	margin-top: 100px;
+}
+
+footer h3 {
+	font-size: .8em;
+}
