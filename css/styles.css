@@ -192,3 +192,15 @@ footer {
 footer h3 {
 	font-size: .8em;
 }
+
+.toggle1 {
+	background-color: #FFF8DC;
+	border: none;
+	margin: 10px 0 10px 10px;
+}
+
+.toggle2 {
+	background-color: #FFF8DC;
+	border: none;
+	margin: 10px 10px 10px 0;
+}
