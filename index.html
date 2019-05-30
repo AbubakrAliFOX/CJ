@@ -1,146 +1,283 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/icon_hbm_icon.ico">
+    
     <title>Ahmad Cj</title>
-    <script  src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+
+		<script src="lib/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/js.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
-
-  </head>
-
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
 
 
+<body onload="showme()">
 
-<body id="body">
-    <div class="container-fluid">
-        <button  class="pull-left toggle1" type="button" onclick="nighty()" onclick="night2"><img width="30" height="30" src="img/iconmonstr-weather-114-240.png"></button>
-        <button  class="pull-left toggle2" type="button" onclick="day()" onclick="night2"><img width="30" height="30" src="img/iconmonstr-weather-2-240.png"></button>
-    </div>
+	<!-- lOADING GIPHY -->
+	<div class="loading">
+		<img src="img/giphy.webp">
+	</div>
 
 
-  <header class="container cont1">
-      <nav class="navbar nav nav-header">
-        <div id="header-content">
-            <img id="icon" onmouseover="bw()" onmouseout="nrml()" width="150" height="150" class="img-circle" src="img/ICON.jpg">
-            <h6>Ahmad Sir-Alkhatim</h6>
-            <h6>Aka "Cj"</h6>
-            <h5 id="Designerbtn" class="button center-block">Designer/Artist</h5>
-            <div class="row">
-                <h3 class="col-lg-4 col-md-4 col-sm-12 col-xs-12 not-active "><a id="r1" href="page/aboutme.html"> About me</h3></a>
-                <h3 class="col-lg-4 col-md-4 col-sm-12 col-xs-12 "><a id="r2" href="#">Portfolio</a></h3>
-                <h3 class="col-lg-4 col-md-4 col-sm-12 col-xs-12 not-active  "><a id="r3" href="page/contactme.html">Contact me</a></h3>
-            </div>
-            
-        </div>
-          
-      </nav>
-  </header>
+<div class="allContent">
+	
+	<!-- PAGE NUMBER 1 -->
+	<div class="page1">
+		<!-- Night mode  -->
+	
+	<header class="container-fluid">
+		<div class="row">
+			<div id="icon" class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12 pull-left">
+				<img onclick="portfolio()"  src="img/Cj-typography.jpg">
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 navigator pull-right"> 
+      	<span class="col-lg-4 col-md-4 col-sm-12 col-xs-12 "><h3 onclick="about()" id="about-nav">About me</h3></span>
+      	<span class="col-lg-4 col-md-4 col-sm-12 col-xs-12 "><h3 onclick="portfolio()" id="port-nav" class="active-nav">Portfolio</h3></span>
+				<span class="col-lg-4 col-md-4 col-sm-12 col-xs-12 "><h3 onclick="contact()" id="contact-nav">Contact</h3></span>
+      </div>          
+		</div>		
+	</header>
 
-  <section class="quote">
-    <div class="container cont2">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor turpis eu eros posuere laoreet. Proin molestie hendrerit consectetur.estibulum at tempus nulla, a ullamcorper urna. In nec est maximus, dapibus sapien nec, convallis lorem. Quisque posuere enim lectus, in venenatis lacus mattis id. Proin laoreet ex nec sapien condimentum, non placerat libero porttitor. </h3>
-        <p><i><b>-Ahmad SirAlkatim-</b></i></p>
-        
-    </div>
-      
-  </section>
+	<div class="main-content container-fluid">
+		<div class="row">
 
-  <section class="showcase">
-    <figure class="container figure cont3">
-        <div class="figure-1">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                      <p class="caption caption-1"><img src="img/Go alone.jpg">This is an image</p>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="details details-1">
-                        <p>Suspendisse finibus accumsan tortor quis sollicitudin. Fusce vitae dui ut libero eleifend finibus eu nec massa. Donec pulvinar pulvinar magna, vel vehicula eros varius consequat. Nulla mollis consectetur risus, nec mattis dolor congue in. Pellentesque sed aliquet lorem, id porttitor tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec finibus ipsum non urna imperdiet, in ullamcorper est volutpat.</p>    
-                    </div>
-                                    
-                </div>
-            </div>
-        </div>
+			<div class="column">
 
-        <div class="figure-2">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-sm hidden-xs">
-                      <div class="details details-2">
-                        <p>Suspendisse finibus accumsan tortor quis sollicitudin. Fusce vitae dui ut libero eleifend finibus eu nec massa. Donec pulvinar pulvinar magna, vel vehicula eros varius consequat. Nulla mollis consectetur risus, nec mattis dolor congue in. Pellentesque sed aliquet lorem, id porttitor tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec finibus ipsum non urna imperdiet, in ullamcorper est volutpat.</p>    
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <p class="caption caption-2"><img src="img/Let's go sailing.jpg">This is an image</p>       
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-lg hidden-md">
-                      <div class="details details-2 details-2s">
-                        <p>Suspendisse finibus accumsan tortor quis sollicitudin. Fusce vitae dui ut libero eleifend finibus eu nec massa. Donec pulvinar pulvinar magna, vel vehicula eros varius consequat. Nulla mollis consectetur risus, nec mattis dolor congue in. Pellentesque sed aliquet lorem, id porttitor tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec finibus ipsum non urna imperdiet, in ullamcorper est volutpat.</p>    
-                    </div>
-                </div>
-            </div>
-        </div>
+				<div onmouseover="blurOut1()" onmouseout="endBlur1()" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 img-container"><img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pic1" src="img/Matta.jpg"><a onclick="document.querySelector('.modal1').style.display='block';"><h1 class="middle1 text">When?</h1></a></div>
+				<div class="square modal1">
+					<span onclick="document.querySelector('.modal1').style.display='none';" class="close">&times;</span>
+					<div class="col-lg-6 pull-left">
+						<img class="col-lg-12" src="img/Matta.jpg">
+					</div>
+					<div class="col-lg-5 caption pull-right">
+						<h1><b>When?</b></h1>
+						<p>When we return, we derive the feeling that includes us, who feel that we exist, and feel that life is simple and that whatever we progress we must know our true self, that human self, which always asserts that joy is not the difficulty we feel.</p>
+					</div>
+				</div>
 
-        <div class="figure-3">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                      <p class="caption caption-3"><img src="img/Bloom where you are planted.jpg">This is an image</p>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="details details-3">
-                        <p>Suspendisse finibus accumsan tortor quis sollicitudin. Fusce vitae dui ut libero eleifend finibus eu nec massa. Donec pulvinar pulvinar magna, vel vehicula eros varius consequat. Nulla mollis consectetur risus, nec mattis dolor congue in. Pellentesque sed aliquet lorem, id porttitor tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec finibus ipsum non urna imperdiet, in ullamcorper est volutpat.</p>    
-                    </div>
-                                    
-                </div>
-            </div>
-        </div>
+				<div onmouseover="blurOut2()" onmouseout="endBlur2()" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 img-container"><img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pic2" src="img/Let's go sailing.jpg"><a onclick="document.querySelector('.modal2').style.display='block';"><h1 class="middle2 text">Let's go sailing</h1></a></div>
+				<div class="square modal2">
+					<span onclick="document.querySelector('.modal2').style.display='none';" class="close">&times;</span>
+					<div class="col-lg-6">
+						<img class="col-lg-12" src="img/Let's go sailing.jpg">
+					</div>
+					<div class="col-lg-5 caption pull-right">
+						<h1><b>Let's go sailing</b></h1>
+						<h2>Sailing, one of the best ways to discover yourself, provides you with a powerful formula for psychological comfort, to see your own true image, and sometimes to provide things that may seem distant, even knowledge. In the end, the sea is part of our identity.</h2>
+					</div>
+				</div>
 
-        <div class="figure-4">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-sm hidden-xs">
-                      <div class="details details-4">
-                        <p  class="p4">Suspendisse finibus accumsan tortor quis sollicitudin. Fusce vitae dui ut libero eleifend finibus eu nec massa. Donec pulvinar pulvinar magna, vel vehicula eros varius consequat. Nulla mollis consectetur risus, nec mattis dolor congue in. Pellentesque sed aliquet lorem, id porttitor tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec finibus ipsum non urna imperdiet, in ullamcorper est volutpat.</p>    
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <p class="caption caption-4"><img src="img/Matta.jpg">This is an image</p>       
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-lg hidden-md">
-                      <div class="details details-4 details-4s">
-                        <p>Suspendisse finibus accumsan tortor quis sollicitudin. Fusce vitae dui ut libero eleifend finibus eu nec massa. Donec pulvinar pulvinar magna, vel vehicula eros varius consequat. Nulla mollis consectetur risus, nec mattis dolor congue in. Pellentesque sed aliquet lorem, id porttitor tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec finibus ipsum non urna imperdiet, in ullamcorper est volutpat.</p>    
-                    </div>
-                </div>
-            </div>
-        </div>
+				<div onmouseover="blurOut3()" onmouseout="endBlur3()" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 img-container"><img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pic3" src="img/This land is ours.jpg"><a onclick="document.querySelector('.modal3').style.display='block';"><h1 class="middle3 text">This land is ours</h1></a></div>
+				<div class="square modal3">
+					<span onclick="document.querySelector('.modal3').style.display='none';" class="close">&times;</span>
+					<div class="col-lg-6">
+						<img class="col-lg-12" src="img/This land is ours.jpg">
+					</div>
+					<div class="col-lg-5 caption pull-right">
+						<h1><b>This land is ours</b></h1>
+						<h2>: It is a feeling that all of us feel sometimes that we are part of something, even if it is just an illusion. In fact, belonging is the most powerful way to feel human, to feel that it exists, to feel its strength, It is part of a vast land where he lived and built his identity.</h2>
+					</div>
+				</div>
 
-    </figure>
-      
-  </section>
+			</div>
 
-  <footer>
-      <div id="foot1" class="container cont4">
-        <h3 class="pull-left foot1">Copyrights reserved &copy</h3>
-        <h3 class="pull-right foot2">abubakr ali</h3>
-          
-      </div>
-  </footer>
+			<div class="column">
+
+				<div onmouseover="blurOut4()" onmouseout="endBlur4()" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 img-container"><img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pic4" src="img/Want to learn Dinkawiya.jpg"><a onclick="document.querySelector('.modal4').style.display='block';"><h1 class="middle4 text">Want to learn Dinkawiya?</h1></a></div>
+				<div class="modal modal4">
+					<span onclick="document.querySelector('.modal4').style.display='none';" class="close">&times;</span>
+					<div class="col-lg-6">
+						<img class="col-lg-12" src="img/Want to learn Dinkawiya.jpg">
+					</div>
+					<div class="col-lg-5 caption pull-right">
+						<h1><b>Want to learn Dinkawiya?</b></h1>
+						<h2>Is a banner, a fake Ad of Dinka language learning, one of the most famous and widespread languages in southern Sudan.</h2>
+					</div>
+				</div>
+
+				<div onmouseover="blurOut5()" onmouseout="endBlur5()" class="col-lg-8 col-md-12 col-sm-12 col-xs-12 img-container"><img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pic5" src="img/Bloom where you are planted.jpg"><a onclick="document.querySelector('.modal5').style.display='block';"><h1 class="middle5 text">Bloom where you are planted</h1></a></div>
+				<div class=" modal5">
+					<span onclick="document.querySelector('.modal5').style.display='none';" class="close">&times;</span>
+					<div class="col-lg-12">
+						<img class="col-lg-12" src="img/Bloom where you are planted.jpg">
+					</div>
+					<div class="col-lg-12 caption">
+						<h1><b>Bloom where you are</b></h1>
+						<h2>Always make your identity built on to blossom everywhere, to make every place, a beautiful and better place, and to make yourself a flower the more you pass, make your breeze the first to feel.</h2>
+					</div>
+				</div>
+
+				<div onmouseover="blurOut6()" onmouseout="endBlur6()" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 img-container"><img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pic6" src="img/Go alone.jpg"><a onclick="document.querySelector('.modal6').style.display='block';"><h1 class="middle6 text">Go alone</h1></a></div>
+				<div class="modal modal6">
+					<span onclick="document.querySelector('.modal6').style.display='none';" class="close">&times;</span>
+					<div class="col-lg-12">
+						<img class="col-lg-12" src="img/Go alone.jpg">
+					</div>
+					<div class="col-lg-12 caption">
+						<h1><b>Go alone</b></h1>
+						<h2>Sometimes, to progress alone, better than to wait with everyone, the truth is, the world does not wait for the zombies but respects those who believe in progress and permanent movement, who change life.</h2>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="column">
+
+				<div onmouseover="blurOut7()" onmouseout="endBlur7()" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-container"><img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pic7" src="img/The door is still closed, although the answers are everywhere!.jpg"><a onclick="document.querySelector('.modal7').style.display='block';"><h1 class="middle7 text">The door is still closed, although the answers are everywhere!</h1></a></div>
+				<div class="modal modal7">
+					<span onclick="document.querySelector('.modal7').style.display='none';" class="close">&times;</span>
+					<div class="col-lg-6">
+						<img class="col-lg-12" src="img/The door is still closed, although the answers are everywhere!.jpg">
+					</div>
+					<div class="col-lg-5 caption pull-right">
+						<h1><b>The door is still closed, although the answers are everywhere!</b></h1>
+						<h2>Do not you feel that sometimes we are looking for the answer in the wrong place!, or we are failing to search for it. We fool ourselves that it does not exist, and we convince ourselves inevitably that these answers are very far from us, even though they are closest to us. We feel, and what keeps us away from them is a look, a truly transparent look.</h2>
+					</div>
+				</div>
+
+				<div onmouseover="blurOut8()" onmouseout="endBlur8()" class="col-lg-8 col-md-6 col-sm-12 col-xs-12 img-container"><img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pic8" src="img/White wings logo.jpg"><a onclick="document.querySelector('.modal8').style.display='block';"><h1 class="middle8 text">White wings logo</h1></a></div>
+				<div class="modal modal8">
+					<span onclick="document.querySelector('.modal8').style.display='none';" class="close">&times;</span>
+					<div class="col-lg-6">
+						<img class="col-lg-12" src="img/White wings logo.jpg">
+					</div>
+					<div class="col-lg-5 caption pull-right">
+						<h1><b>White wings logo</b></h1>
+						<h2>Is a logo, for a travel and tourism agency.</h2>
+					</div>
+				</div>
+
+				
+
+			</div>
+
+			<div class="column">
+
+				
+				<div onmouseover="blurOut12()" onmouseout="endBlur12()" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 img-container"><img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pic12" src="img/Behind each great revolution, a woman of courage and determination.jpg"><a onclick="document.querySelector('.modal12').style.display='block';"><h1 class="middle12 text">Behind each great revolution, a woman of courage and determination</h1></a></div>
+				<div class="modal modal12">
+					<span onclick="document.querySelector('.modal12').style.display='none';" class="close">&times;</span>
+					<div class="col-lg-6">
+						<img class="col-lg-12" src="img/Behind each great revolution, a woman of courage and determination.jpg">
+					</div>
+					<div class="col-lg-5 caption pull-right">
+						<h1><b>Behind each great revolution, a woman of courage and determination</b></h1>
+						<h2>We know all about how women changed everything, how a woman was if she wanted to reach something and penetrate it, and if she said something she believed in, women are always described as weak, but the truth is that women are hidden powers, which are felt only by those who allow themselves. You see, She may do things, no one will ever expect, and its implications, how women change wars and revolutions!.</h2>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="column">
+				<!-- <div onmouseover="blurOut13()" onmouseout="endBlur13()" class="col-lg-8 col-md-6 col-sm-12 col-xs-12 img-container"><img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pic13" src="img/maxresdefault.jpg"><a onclick="document.querySelector('.modal4').style.display='block';"><h1 class="middle13 text">Matta</h1></a></div>
+				<div onmouseover="blurOut14()" onmouseout="endBlur14()" class="col-lg-3 img-container"><img class="col-lg-12 pic14" src="img/361cb863b3efa832b989ffb146e6bd44.jpg"><a onclick="document.querySelector('.modal4').style.display='block';"><h1 class="middle14 text">Let's go sailing</h1></a></div>
+				<div onmouseover="blurOut15()" onmouseout="endBlur15()" class="col-lg-8 img-container"><img class="col-lg-12 pic15" src="img/11_maxresdefault.jpg"><a onclick="document.querySelector('.modal4').style.display='block';"><h1 class="middle15 text">Let's go sailing</h1></a></div> -->
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<!-- PAGE NUMBER 2 -->
+	<div class="aboutPage main-content2">
+		<section class="container showDown">
+			<div class="personal-picture col-lg-12">
+
+				<img class="center img-circle cj-photo" src="img/personalpic.jpg">
+
+				<button onclick="reveal(); document.querySelector('.CJ').scrollIntoView();" class="center-block cj-btn">Find out more
+				<spin class="toggle">
+					<i class="fas fa-angle-double-down"></i>
+				</spin>
+				</button>
+
+				<button onclick="conseal(); document.querySelector('.aboutPage').scrollIntoView();" class="center-block cj-btn2">Less Details
+				<spin class="toggle">
+					<i class="fas fa-angle-double-up"></i>
+				</spin>
+				</button>
+
+				<section class="quote">
+						<h3>"Beyond what I am, closer than you expect."</h3>
+						<p><i><b>-Ahmad SirAlkatim-</b></i></p>
+				</section>
+			</div>
+
+			<div class="Article">
+				<h3 class="CJ">Who is Ahmad Cj?</h3>
+			<p>Ahmed CJ, is an engineering student, He is interested in design and programming, has been working in design for at least six years, with little programming experience. He is also interested in analyzing data and studying programming ideas and concepts. He currently lives in Sudan.</p>
+
+			<h3>My Inspiration</h3>
+			<p>In graphic design, it's hard to find what inspires you, but to me, the inspirational designers were the other designers who worked hard to create a wonderful image of their work. Everyone who worked hard also inspired me, In the end, it was the effort that made the work come out in a powerful, brilliant and clear way.</p>
+
+			<h3>My Journey</h3>
+			<p>I started my journey in general design by following films, as films represented a large and real part of my life, I have always tried to understand the nature of the composition of the arts and the scenes in general, of course there is no profound relationship between graphic design and film production, but after several experiments with specialized programs, I noticed that I like graphic design, which represents a way to express what I think or feel.</p>
+			</div>
+
+		</section>
+
+		<footer class="container footer"> 
+			<h5 style="float: left"><b>COPYRIGHTS RESERVED &copy</b></h5> 
+			<h5 style="float: right"><b>ABUBAKR ALI </b></h5>
+		</footer>
+
+	</div>
+
   
+	<!-- Page 3 -->
+	<div class="contactPage main-content3">
+
+		<section class="container">
+			<h1 style="margin-bottom: 40px;">Interested?</h1>
+
+			<h2>Then give me a call<a style="margin: 6px;" id="num" class="cell" href="tel:+249960523623"><b>+249 96 052 3623<b></a></h2><br>
+
+			<h2 class="email-setting">Or send me an E-mail<button onmouseover="displayEmail()" onmouseout="displayEmailEnd()" class="email-btn"><i class="far fa-envelope"></i><span class="email"><a href = "mailto: ahmedcj@gmail.com">ahmedcj@gmail.com</a></span></button>
+			</h2>
+
+			<h2 class="socials">You can also find me on Social Media
+
+				<span class="facebook"><button><a target="_blank" href ="https://web.facebook.com/Ahmed.Elsir.Sinada?lst=100002140495540%3A100005749655758%3A1540877393"><i class="fab fa-facebook-f"></i></a></button></span>
+
+				<span class="twitter"><button><a target="_blank" href ="https://twitter.com/AhmedCj"><i class="fab fa-twitter"></i></a></button></span>
+
+				<span class="linkedin"><button><a target="_blank" href ="https://www.linkedin.com/in/ahmed-sinada-655ab514b/?fbclid=IwAR07LGfv8t4eIQOQvqes57Hogqt4ukTukejwD2uOyV5iKGsaHF2rSLOpd_o"><i class="fab fa-linkedin-in"></i></a></button></span>
+
+				<span class="youtube"><button><a target="_blank" href ="https://www.youtube.com/Ahmed%20Cj?fbclid=IwAR2E_umiqQ3gid_NXetOst4PouBiNjowP0pnCsm5enhxbr47vOpPFVpG8So"><i class="fab fa-youtube"></i></a></button></span>
+
+				<span class="instagram"><button><a target="_blank" href ="https://www.instagram.com/A7medCj/"><i class="fab fa-instagram"></i></a></button></span>
+
+				<span class="behance"><button><a target="_blank" href ="https://www.behance.net/ahmedcj"><i class="fab fa-behance"></i></i></a></button></span>
+
+
+			</h2>
+
+		</section>
+
+		<footer class="container footer"> 
+			<h5 style="float: left"><b>COPYRIGHTS RESERVED &copy</b></h5> 
+			<h5 style="float: right"><b>ABUBAKR ALI </b></h5>
+		</footer>
+
+	</div>
+
+
+
+</div>
+</div>
+<script src="js/js.js" type="text/javascript"></script>
 </body>
+
+
+
+
+
+
 </html>
-<!--
-<div class="pic-caption pull-left">
-            <div class="details">
-                <p>Suspendisse finibus accumsan tortor quis sollicitudin. Fusce vitae dui ut libero eleifend finibus eu nec massa. Donec pulvinar pulvinar magna, vel vehicula eros varius consequat. Nulla mollis consectetur risus, nec mattis dolor congue in. Pellentesque sed aliquet lorem, id porttitor tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec finibus ipsum non urna imperdiet, in ullamcorper est volutpat.</p>
-            </div>
-            -->
